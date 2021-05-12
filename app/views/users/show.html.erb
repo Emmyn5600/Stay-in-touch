@@ -1,5 +1,18 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
+  <% if current_user != @user %>
+    <%= friendship_button(@user) %>
+  <% else %>
+    <div>
+      <h4>Friendships Requests:</h4>
+      <ul>
+       <% @user.friend_requests.each do |u| %>
+         <li><%= u.name %><%= friendship_button(u) %></li>
+       <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">
