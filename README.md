@@ -4,13 +4,12 @@
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+- Ruby v2.7.2
+- Ruby on Rails v6.1.3.2
 
 ## Live Demo
 
 TBA
-
 
 ## Getting Started
 
@@ -18,9 +17,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
+Ruby: 2.7.3
+Rails: 6.1.3.2
+Postgres: >=13.2-2
 
 ### Setup
 
@@ -46,7 +45,6 @@ To make sure the linters' checks using Github Actions work properly, you should 
 3. Start working on your milestone as usual.
 4. Open a PR from the `feature/branch` when your work is done.
 
-
 ### Usage
 
 Start server with:
@@ -61,6 +59,7 @@ Open `http://localhost:3000/` in your browser.
 
 ```
     rpsec --format documentation
+    bundle exec rspec
 ```
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
@@ -69,9 +68,13 @@ Open `http://localhost:3000/` in your browser.
 
 TBA
 
-## Authors
+## Author
 
-TBA
+👤 **NSABIMANA Emmanuel**
+
+- GitHub: [@emmyn5600](https://github.com/Emmyn5600)
+- Twitter: [@NSABIMA62253884](https://twitter.com/NSABIMA62253884)
+- LinkedIn: [@nsabimana-emmanuel-4276091b2](https://www.linkedin.com/in/nsabimana-emmanuel-4276091b2/)
 
 ## 🤝 Contributing
 
@@ -85,9 +88,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
-
-## 📝 License
-
-TBA
+- Hat tip to anyone whose code was used.
+- Inspiration
+- etc
 
