@@ -1,4 +1,4 @@
-require './rails_helper'
+require 'rails_helper'
 
 RSpec.describe 'Siging Up', type: :feature do
   scenario 'Sign up with valid inputs' do

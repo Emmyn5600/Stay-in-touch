@@ -1,4 +1,4 @@
-require './rails_helper'
+require 'rails_helper'
 
 RSpec.describe Friendship, type: :model do
   it 'validates name, username and email' do
