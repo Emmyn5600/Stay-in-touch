@@ -59,7 +59,7 @@ Open `http://localhost:3000/` in your browser.
 
 ```
     rpsec --format documentation
-    rspec spec/model/(any file you need) like friendships_spec.rb, like_spec.rb, user_spec.rb, comment_spec.rb, etc
+    bundle exec rspec
 ```
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
