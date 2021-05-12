@@ -1,4 +1,4 @@
-require_relative '/rails_helper'
+require './rails_helper'
 
 RSpec.describe Friendship, type: :model do
   it 'validates name, username and email' do
@@ -7,7 +7,7 @@ RSpec.describe Friendship, type: :model do
   end
 
   describe 'ActiveRecord associations' do
-    it { should belong_to(:user) }
+    it { should belong_to(:user).class_name('User') }
     it { should belong_to(:friend).class_name('User') }
   end
 end
