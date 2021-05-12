@@ -10,7 +10,7 @@ end
 
 RSpec.describe Post, type: :model do
   subject do
-    User.create(id: 4, name: 'Foo', email: 'a@a.com', password: '123456')
+    User.create(id: 4, name: 'Cool', email: 'cool@.com', password: '123456')
     Post.new(content: 'Anything', user_id: 4)
   end
 
