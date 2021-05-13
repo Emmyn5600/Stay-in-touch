@@ -67,7 +67,6 @@ Open `http://localhost:3000/` in your browser.
 ### Deployment
 
 TBA
-
 ## Author
 
 👤 **NSABIMANA Emmanuel**
