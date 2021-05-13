@@ -1,15 +1,39 @@
 class Friendship < ApplicationRecord
+  after_initialize :set_defaults, unless: :persisted?
+  after_update :create_inverse, if: :inverse_record_nil?
+  after_destroy :destroy_inverse
+
   belongs_to :user
-  belongs_to :friend, class_name: 'User', foreign_key: 'friend_id'
+  belongs_to :friend, class_name: 'User'
 
-  enum status: { pending: 0, confirmed: 1 }
-
-  def confirm_friend
-    Friendship.create(user_id: friend_id, friend_id: user_id, status: 'confirmed')
+  def set_defaults
+    self.status = false if status.nil?
   end
 
-  after_destroy do |f|
-    friendship = Friendship.find_by(user_id: f.friend_id, friend_id: f.user_id)
-    friendship&.destroy
+  def create_inverse
+    Friendship.create(user: friend, friend: user, status: status)
+  end
+
+  def update_inverse
+    inv_rec = inverse_record
+    return if inv_rec.status == status
+
+    inv_rec.status = status
+    inv_rec.save
+  end
+
+  def destroy_inverse
+    inv_rec = inverse_record
+    return if inv_rec.nil?
+
+    inv_rec.destroy
+  end
+
+  def inverse_record_nil?
+    inverse_record.nil?
+  end
+
+  def inverse_record
+    Friendship.where(user: friend, friend: user).first
   end
 end

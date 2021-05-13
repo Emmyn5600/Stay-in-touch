@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
-
   def index
     @post = Post.new
     timeline_posts
@@ -20,8 +19,10 @@ class PostsController < ApplicationController
   private
 
   def timeline_posts
-    posts = Post.where('user_id IN (?)', current_user.friends.ids << current_user.id)
-    @timeline_posts ||= posts.ordered_by_most_recent
+    @timeline_posts ||= Post.where(user: (current_user.friends.to_a << current_user))
+
+    @timeline_posts = @timeline_posts.sort_by { |post| -post.created_at.to_i }
+    @timeline_posts.compact
   end
 
   def post_params
