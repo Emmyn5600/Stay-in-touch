@@ -17,10 +17,6 @@ Only signed-in users can have access to the apps features. When Logged-in, a use
 ![](./images/img6.png)
 ![](./images/img7.png)
 
-## Live Demo
-
-![Live link server](https://quiet-escarpment-53071.herokuapp.com/)
-
 
 ## Here is a description of business requirements for the app:
 
@@ -143,8 +139,6 @@ Open `http://localhost:3000/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [https://github.com/Emmyn5600/Stay-in-touch/actions](issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
@@ -152,4 +146,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 * Microverse
+
+## 📝 License
+
+This project is [MIT](https://en.wikipedia.org/wiki/MIT_License) licensed.
 
