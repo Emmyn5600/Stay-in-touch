@@ -148,8 +148,6 @@ Open `http://localhost:3000/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [https://github.com/Emmyn5600/Stay-in-touch/actions](issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
@@ -157,4 +155,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 * Microverse
+
+## 📝 License
+
+This project is [MIT](https://en.wikipedia.org/wiki/MIT_License) licensed.
 
