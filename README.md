@@ -24,7 +24,7 @@ Only signed-in users can have access to the apps features. When Logged-in, a use
 
 ## Live Demo
 
-![Live link server](https://quiet-escarpment-53071.herokuapp.com/)
+![Live link server](https://quiet-escarpment-53071.herokuapp.com)
 
 
 ## Here is a description of business requirements for the app:
